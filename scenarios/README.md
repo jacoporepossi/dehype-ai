@@ -5,6 +5,7 @@ Each subdirectory is a self-contained experiment with its own target code, bread
 | # | Name | Category |
 |---|------|----------|
 | 01 | [SQL Injection on Flask Mirror](01-sqli-flask/) | web |
+| 02 | [Egress Shortcut (Benchmark Data Exfiltration)](02-egress-shortcut/) | network |
 
 ## Structure convention
 

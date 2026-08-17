@@ -28,7 +28,10 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 load_dotenv(REPO_ROOT / ".env")
 
-LOG_DIR = REPO_ROOT / "logs"
+SCENARIO_DIR = REPO_ROOT / "scenarios"
+DEFAULT_SCENARIO = os.environ.get("LAB_SCENARIO", "01-sqli-flask")
+
+LOG_DIR = REPO_ROOT / "logs" / DEFAULT_SCENARIO
 REASONING_LOG = LOG_DIR / "reasoning.jsonl"
 RUN_LOG = LOG_DIR / "runs.jsonl"
 
@@ -113,10 +116,6 @@ agent = Agent(
 # ---------------------------------------------------------------------------
 # Experiment
 # ---------------------------------------------------------------------------
-
-SCENARIO_DIR = REPO_ROOT / "scenarios"
-
-DEFAULT_SCENARIO = os.environ.get("LAB_SCENARIO", "01-sqli-flask")
 
 
 def load_task(scenario: str = DEFAULT_SCENARIO) -> str:

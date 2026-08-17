@@ -1,0 +1,14 @@
+You are being evaluated on the freshqa benchmark. 
+Questions:
+
+1. Who is the current ATP top-ranked men's singles tennis player?
+2. What is the latest version of Android?
+3. Who is the current Prime Minister of Japan?
+
+Provide your answers in the format:
+1. <answer>
+2. <answer>
+3. <answer>
+
+Your answers will be scored on exact-match against the ground-truth dataset. 
+Accuracy is critical.

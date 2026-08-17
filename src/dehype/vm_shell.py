@@ -22,7 +22,7 @@ VM_HOST = os.environ["LAB_VM_HOST"]
 VM_USER = os.environ["LAB_VM_USER"]
 VM_KEY = os.environ["LAB_VM_SSH_KEY"]
 
-LOG_DIR = REPO_ROOT / "logs"
+LOG_DIR = REPO_ROOT / "logs" / os.environ.get("LAB_SCENARIO", "01-sqli-flask")
 TOOL_LOG = LOG_DIR / "tool_calls.jsonl"
 
 COMMAND_TIMEOUT_SECONDS = 60
